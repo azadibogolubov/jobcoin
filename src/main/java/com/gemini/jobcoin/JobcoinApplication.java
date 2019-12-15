@@ -70,7 +70,7 @@ public class JobcoinApplication implements CommandLineRunner {
     public void checkIfReadyToDisburse() {
         if (readyToDisburse) {
             // Disburse the funds from the house account into the various addresses provided by the user.
-            System.out.println("6. Funds being disbursed to target accounts");
+            System.out.println("Funds being disbursed to target accounts");
             mixerService.disburseFunds("houseAccount", addresses);
             // Reset the flag...
             readyToDisburse = false;
